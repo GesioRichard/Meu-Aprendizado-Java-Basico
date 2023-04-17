@@ -1,4 +1,4 @@
-package curso_programacao;
+package curso_programacao.datas;
 
 import java.time.Duration;
 import java.time.Instant;

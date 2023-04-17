@@ -1,4 +1,4 @@
-package curso_programacao;
+package curso_programacao.datas;
 
 import java.time.Instant;
 import java.time.LocalDate;

@@ -1,4 +1,4 @@
-package curso_programacao;
+package curso_programacao.arrays.atividades;
 
 import java.util.Locale;
 import java.util.Scanner;

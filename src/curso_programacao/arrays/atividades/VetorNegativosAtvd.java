@@ -1,30 +1,30 @@
-package curso_programacao;
+package curso_programacao.arrays.atividades;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class VetorEstudos {
+public class VetorNegativosAtvd {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-
+		
 		System.out.println("Digite o tamanho do vetor: ");
-		int tamanho = sc.nextInt();
+		int n = sc.nextInt();
 		
-		double[] vetor = new double[tamanho];
-		double soma = 0.0;
-		
-		for (int i = 0; i < vetor.length; i++) {
-			vetor[i] = sc.nextDouble();
-			soma += vetor[i];
-		}
+		int[] vetor = new int[n];
 		
 		for (int i = 0; i < vetor.length; i++) {
-			System.out.println("O numero da posição " + (i + 1) + " é: " + vetor[i]);
+			System.out.println("Digite o " + (i+1) + "° número: ");
+			vetor[i] = sc.nextInt();
 		}
 		
-		System.out.printf("A média é: %.2f%n", soma / tamanho);
+		System.out.println("Os numeros negativos são:");
+		for (int i = 0; i < vetor.length; i++) {
+			if(vetor[i] < 0) {
+				System.out.println(vetor[i]);
+			}
+		}
 		
 		sc.close();
 	}
